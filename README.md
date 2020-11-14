@@ -1,0 +1,2 @@
+# pharo-catalog
+Simple catalog
