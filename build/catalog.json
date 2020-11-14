@@ -1,0 +1,18 @@
+[
+{
+      "description":"XMLWriter allows you to generate well-formed XML documents using an API based on Seaside's canvas and tag brushes so all tags will be nested properly and not left unclosed.",
+      "contactInfo":null,
+      "keywords":[
+         "XML",
+         "HTML",
+         "XHTML",
+         "writer",
+         "web",
+         "markup",
+         "document"
+      ],
+      "packageName":"ConfigurationOfXMLWriter",
+      "name":"XMLWriter",
+      "repositoryUrl":"http://smalltalkhub.com/mc/Pharo/MetaRepoForPharo80/main"
+   },
+]
