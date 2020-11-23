@@ -23,20 +23,24 @@ StCatalog class >> name: aName sourceURL: anURLString [
 
 { #category : #accessing }
 StCatalog >> name [
+
 	^ name
 ]
 
 { #category : #accessing }
 StCatalog >> name: anObject [
+
 	name := anObject
 ]
 
 { #category : #accessing }
 StCatalog >> sourceURL [
+
 	^ sourceURL
 ]
 
 { #category : #accessing }
 StCatalog >> sourceURL: anObject [
+
 	sourceURL := anObject
 ]
