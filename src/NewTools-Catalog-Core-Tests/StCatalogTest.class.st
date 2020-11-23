@@ -1,16 +1,23 @@
 Class {
 	#name : #StCatalogTest,
 	#superclass : #TestCase,
+	#instVars : [
+		'catalog'
+	],
 	#category : #'NewTools-Catalog-Core-Tests-Model'
 }
 
+{ #category : #running }
+StCatalogTest >> setUp [ 
+	super setUp.
+
+	catalog := StCatalog name: 'Pharo Official' url: 'http://www.pharo.org/catalog.json'.
+]
+
 { #category : #tests }
 StCatalogTest >> testInstanceCreation [
-
-	| catalog |
-	catalog := StCatalog name: 'Pharo catalog' url: 'http://www.pharo.org/catalog.json'.
-
-	self assert: catalog name equals: 'Pharo catalog'.
+ 
+	self assert: catalog name equals: 'Pharo Official'.
 	self assert: catalog url equals: 'http://www.pharo.org/catalog.json'.
 	
 ]

@@ -17,17 +17,16 @@ Class {
 { #category : #'instance creation' }
 StCatalog class >> name: aName url: anURLString [
 
-	^self new
-		name: aName;
-		url: anURLString;
-		yourself
-		
+	^ self new
+		  name: aName;
+		  url: anURLString;
+		  yourself
 ]
 
 { #category : #registry }
 StCatalog class >> registry [
 
-	^ Registry ifNil: [ Registry := OrderedCollection new ]
+	^ Registry ifNil: [ Registry := OrderedCollection new ] 
 ]
 
 { #category : #accessing }
