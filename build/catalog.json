@@ -1,5 +1,5 @@
 [
-{
+  {
       "description":"XMLWriter allows you to generate well-formed XML documents using an API based on Seaside's canvas and tag brushes so all tags will be nested properly and not left unclosed.",
       "contactInfo":null,
       "keywords":[
@@ -14,5 +14,15 @@
       "packageName":"ConfigurationOfXMLWriter",
       "name":"XMLWriter",
       "repositoryUrl":"http://smalltalkhub.com/mc/Pharo/MetaRepoForPharo80/main"
-   }
+   },
+   {
+      "description":"A scheduler for Pharo",
+      "contactInfo":null,
+      "keywords":[
+         "timer"
+      ],
+      "packageName":"ConfigurationOfScheduler",
+      "name":"Scheduler",
+      "repositoryUrl":"github://pharo-contributions/Scheduler/src"
+   }   
 ]
