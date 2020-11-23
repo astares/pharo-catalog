@@ -6,19 +6,28 @@ Class {
 	#superclass : #Object,
 	#instVars : [
 		'name',
-		'sourceURL'
+		'url'
+	],
+	#classVars : [
+		'Registry'
 	],
 	#category : #'NewTools-Catalog-Core-Model'
 }
 
 { #category : #'instance creation' }
-StCatalog class >> name: aName sourceURL: anURLString [
+StCatalog class >> name: aName url: anURLString [
 
 	^self new
 		name: aName;
-		sourceURL: anURLString;
+		url: anURLString;
 		yourself
 		
+]
+
+{ #category : #registry }
+StCatalog class >> registry [
+
+	^ Registry ifNil: [ Registry := OrderedCollection new ]
 ]
 
 { #category : #accessing }
@@ -34,13 +43,11 @@ StCatalog >> name: anObject [
 ]
 
 { #category : #accessing }
-StCatalog >> sourceURL [
-
-	^ sourceURL
+StCatalog >> url [
+	^ url
 ]
 
 { #category : #accessing }
-StCatalog >> sourceURL: anObject [
-
-	sourceURL := anObject
+StCatalog >> url: anObject [
+	url := anObject
 ]
