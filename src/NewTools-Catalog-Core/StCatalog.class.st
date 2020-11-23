@@ -8,7 +8,7 @@ Class {
 		'name',
 		'sourceURL'
 	],
-	#category : #'NewTools-Catalog-Model'
+	#category : #'NewTools-Catalog-Core-Model'
 }
 
 { #category : #'instance creation' }
