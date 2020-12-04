@@ -2,7 +2,7 @@
    {
       "name":"Sample project",
       "description":"A sample project for Pharo",     
-      "repositoryURL":"github://pharo-contributions/Scheduler/src"
+      "repositoryURL":"github://pharo-contributions/Scheduler/src",
       "baseline":"BaselineOfSampleProject"
    }   
 ]
