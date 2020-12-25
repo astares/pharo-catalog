@@ -15,6 +15,27 @@ StCatalogEntryTest >> setUp [
 ]
 
 { #category : #tests }
+StCatalogEntryTest >> testFromDictionary [
+
+	|d entry |
+	d := { 
+		#name -> 'Sample'.
+		#description -> 'Sample project'.
+		#baseline -> 'Base'.
+		#repository -> 'github://SomeUser/SampleProject'.
+		
+	 } asDictionary.
+
+	entry := StCatalogEntry fromDictionary: d.
+	
+	self 
+		assert: entry name equals: 'Sample';
+		assert: entry description equals: 'Sample project';
+		assert: entry baseline equals: 'Base';
+		assert: entry repository equals: 'github://SomeUser/SampleProject' 
+]
+
+{ #category : #tests }
 StCatalogEntryTest >> testTags [
 
 	|tags|
