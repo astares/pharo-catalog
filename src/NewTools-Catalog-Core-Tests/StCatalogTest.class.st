@@ -11,14 +11,14 @@ Class {
 StCatalogTest >> setUp [ 
 	super setUp.
 
-	catalog := StCatalog name: 'Pharo Official' url: 'http://www.pharo.org/catalog.json'.
+	catalog := StCatalog name: 'Pharo Official' url: 'https://raw.githubusercontent.com/astares/pharo-catalog/main/build/scatalog.json'.
 ]
 
 { #category : #tests }
 StCatalogTest >> testInstanceCreation [
  
 	self assert: catalog name equals: 'Pharo Official'.
-	self assert: catalog url equals: 'http://www.pharo.org/catalog.json'.
+	self assert: catalog url equals: 'https://raw.githubusercontent.com/astares/pharo-catalog/main/build/scatalog.json'.
 	
 ]
 
