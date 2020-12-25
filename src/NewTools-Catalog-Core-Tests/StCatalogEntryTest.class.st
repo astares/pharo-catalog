@@ -1,5 +1,5 @@
 Class {
-	#name : #StCatalogItemTest,
+	#name : #StCatalogEntryTest,
 	#superclass : #TestCase,
 	#instVars : [
 		'item'
@@ -8,14 +8,14 @@ Class {
 }
 
 { #category : #running }
-StCatalogItemTest >> setUp [ 
+StCatalogEntryTest >> setUp [ 
 
 	super setUp.
-	item := StCatalogItem name: 'Scheduler'
+	item := StCatalogEntry name: 'Scheduler'
 ]
 
 { #category : #tests }
-StCatalogItemTest >> testTags [
+StCatalogEntryTest >> testTags [
 
 	|tags|
 	tags := item tags. 
