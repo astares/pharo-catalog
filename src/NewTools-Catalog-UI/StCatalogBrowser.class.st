@@ -60,7 +60,7 @@ StCatalogBrowser >> entriesPage [
 
 	^ SpNotebookPage
 		  title: 'Entries'
-		  icon: (self iconNamed: #nautilusIcon)
+		  icon: (self iconNamed: #config)
 		  provider: [ StCatalogEntryPane new ]
 ]
 
