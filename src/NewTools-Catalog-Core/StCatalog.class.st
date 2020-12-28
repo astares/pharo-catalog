@@ -17,8 +17,9 @@ Class {
 
 { #category : #examples }
 StCatalog class >> example [
-
-	(self name: 'Pharo' url: 'https://raw.githubusercontent.com/astares/pharo-catalog/main/build/scatalog.json') inspect
+	<script: 'self example inspect'>
+	
+	^self name: 'Pharo' url: 'https://raw.githubusercontent.com/astares/pharo-catalog/main/build/scatalog.json'
 ]
 
 { #category : #'instance creation' }

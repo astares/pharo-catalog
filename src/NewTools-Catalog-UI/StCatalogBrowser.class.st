@@ -1,3 +1,6 @@
+"
+The catalog browser shows entries of a software catalog available for the specific Pharo version
+"
 Class {
 	#name : #StCatalogBrowser,
 	#superclass : #SpPresenter,
@@ -5,7 +8,7 @@ Class {
 		'notebook',
 		'toolBar'
 	],
-	#category : #'NewTools-Catalog-Core-Spec'
+	#category : #'NewTools-Catalog-UI-Base'
 }
 
 { #category : #specs }
@@ -43,10 +46,31 @@ StCatalogBrowser >> buildToolBar [
 		yourself
 ]
 
+{ #category : #'private - accessing' }
+StCatalogBrowser >> categoriesPage [
+
+	^ SpNotebookPage
+		  title: 'Categories'
+		  icon: (self iconNamed: #nautilusIcon)
+		  provider: [ StCatalogCategoriesPane new ]
+]
+
+{ #category : #'private - accessing' }
+StCatalogBrowser >> entriesPage [
+
+	^ SpNotebookPage
+		  title: 'Entries'
+		  icon: (self iconNamed: #nautilusIcon)
+		  provider: [ StCatalogEntryPane new ]
+]
+
 { #category : #initialization }
 StCatalogBrowser >> initializePresenters [
 
 	notebook := self newNotebook.
+	notebook 
+		addPage: self entriesPage;
+		addPage: self categoriesPage
 ]
 
 { #category : #initialization }
@@ -65,11 +89,11 @@ StCatalogBrowser >> openSettings [
 	
 	| browser window path |
 	browser := SettingBrowser new 
-		changePackageSet: { self package };
+		changePackageSet: { self class package };
 		yourself.
 		 
 	window := browser open.
-	path := (window submorphs detect: [ :each | (each isKindOf: MorphTreeMorph)  ]) nodeList.
+	path := (window submorphs detect: [ :each | (each isKindOf: MorphTreeMorph) ]) nodeList.
 	browser expandNodePath: path first contents first contents first path.
 ]
 
