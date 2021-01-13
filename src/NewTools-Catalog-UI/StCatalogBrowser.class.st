@@ -59,9 +59,15 @@ StCatalogBrowser >> categoriesPage [
 StCatalogBrowser >> entriesPage [
 
 	^ SpNotebookPage
-		  title: 'Entries'
+		  title: 'All Entries'
 		  icon: (self iconNamed: #config)
 		  provider: [ StCatalogEntryPane new ]
+]
+
+{ #category : #initialization }
+StCatalogBrowser >> initialExtent [
+
+	^400@600
 ]
 
 { #category : #initialization }
