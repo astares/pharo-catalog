@@ -6,10 +6,11 @@ Class {
 	#superclass : #Object,
 	#instVars : [
 		'name',
-		'tags',
 		'description',
+		'tags',
+		'baseline',
 		'repository',
-		'baseline'
+		'load'
 	],
 	#category : #'NewTools-Catalog-Core-Model'
 }
@@ -17,12 +18,15 @@ Class {
 { #category : #'instance creation' }
 StCatalogEntry class >> fromDictionary: aDictionary [
 
-	| entry |
+	| entry tagLine |
 	entry := self name: (aDictionary at: #name).
 	entry 
 		description: (aDictionary at: #description ifAbsent: '');
 		repository: (aDictionary at: #repository ifAbsent: '');
-		baseline: (aDictionary at: #baseline ifAbsent: '').
+		baseline: (aDictionary at: #baseline ifAbsent: '');
+		load: (aDictionary at: #load ifAbsent: '').
+	tagLine := (aDictionary at: #tags ifAbsent: '').		
+	entry tags: (tagLine substrings: (CharacterSet newFrom: ' ,')).
 	^entry
 	
 	
@@ -64,6 +68,18 @@ StCatalogEntry >> description: anObject [
 StCatalogEntry >> hasTags [ 
 
 	^ self tags notEmpty
+]
+
+{ #category : #accessing }
+StCatalogEntry >> load [
+
+	^ load
+]
+
+{ #category : #accessing }
+StCatalogEntry >> load: anObject [
+
+	load := anObject
 ]
 
 { #category : #accessing }
