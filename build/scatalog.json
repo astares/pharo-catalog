@@ -1,10 +1,11 @@
 [
    {
-      "name":"Sample project",
-      "description":"A sample project for Pharo",  
-      "tags":"Sample, Projects",
-      "baseline":"SampleProject",
-      "repository":"github://pharo-contributions/Scheduler/src",
+      "name":"Pomodoro",      
+      "tags":"Utilities",
+      "description":"Pomodoro timer for Pharo",  
+      "loader":"metacello",
+      "baseline":"Pomodoro",
+      "repository":"github://astares/Pharo-Pomodoro/src",
       "load":"Full"
    }   
 ]
