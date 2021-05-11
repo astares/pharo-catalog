@@ -10,7 +10,7 @@
    },
    {
       "loader":"script",
-      "name":"Pomodoro",          
+      "name":"Wallpaper - Lighthouse",          
       "tags":"Utilities",
       "description":"Pomodoro timer for Pharo",        
       "script":"World backgroundImage: (ZnEasygetJpeg: 'https://spotlight.it-notes.ru/wp-content/uploads/2017/08/02c48424be88ee36d5300ad89033fd82.jpg') layout: #scaled"      
