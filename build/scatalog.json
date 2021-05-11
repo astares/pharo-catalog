@@ -6,7 +6,7 @@
       "description":"Pomodoro timer for Pharo",        
       "baseline":"Pomodoro",
       "repository":"github://astares/Pharo-Pomodoro/src",
-      "load":"Full"
+      "load":"default"
    },
    {
       "type":"script",
