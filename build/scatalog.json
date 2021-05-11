@@ -9,7 +9,7 @@
    },
    {
       "type":"metacello",
-      "name":"Seaside 3.2.1",                
+      "name":"Seaside - Version 3.2.1",                
       "description":"Seaside web development framework for Smalltalk",        
       "baseline":"Seaside3",
       "repository":"github://SeasideSt/Seaside:v3.2.1/repository",
@@ -17,7 +17,7 @@
    },
     {
       "type":"metacello",
-      "name":"Seaside latest development",                
+      "name":"Seaside - latest development",                
       "description":"Seaside web development framework for Smalltalk",        
       "baseline":"Seaside3",
       "repository":"github://SeasideSt/Seaside:master/repository",
