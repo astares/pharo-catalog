@@ -1,6 +1,6 @@
 [
    {
-      "loader":"metacello",
+      "type":"metacello",
       "name":"Pomodoro",          
       "tags":"Utilities",
       "description":"Pomodoro timer for Pharo",        
@@ -9,7 +9,7 @@
       "load":"Full"
    },
    {
-      "loader":"script",
+      "type":"script",
       "name":"Wallpaper - Lighthouse",          
       "tags":"Utilities",
       "description":"Pomodoro timer for Pharo",        
